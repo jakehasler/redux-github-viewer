@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.App-logo{
+  height: 200px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 300px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.col {
+  width: 48%;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.info-holder:hover {
+  background: #d6d6d6;
+}
+
+.info-holder {
+  width: 75%;
+  margin: 25px auto;
+}
+
+.info-box {
+  text-align: left;
+  background: #dddddd;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
