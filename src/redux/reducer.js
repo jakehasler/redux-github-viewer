@@ -9,7 +9,6 @@ const SAVE = 'github-viewer/profiles/SAVE';
 export default function reducer(state = defaultState, { type, ...payload  } = {}) {
   switch (type) {
     case SAVE:
-      console.log('STATE', state);
       const profiles = state.profiles;
       profiles.push(payload.profile);
       return { ...state, isFetching: false, profiles };
@@ -19,8 +18,9 @@ export default function reducer(state = defaultState, { type, ...payload  } = {}
 }
 
 export function save(profile) {
-  console.log('Saving...', profile);
-  return { type: SAVE, profile };
+  return (dispatch) => {
+    dispatch({ type: SAVE, profile });
+  }
 }
 
 export const getProfiles = state => state.profiles;

@@ -5,7 +5,6 @@ import AppContainer from './AppContainer';
 
 export default function Root(props) {
   const { store } = props;
-  console.log({ store });
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
